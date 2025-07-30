@@ -4,7 +4,7 @@ A cross-platform desktop application for generating custom QR codes from text or
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 *  **Real-time Generation**: Enter text or a URL and instantly see the QR code preview.
 *  **Customizable Output**: Adjust the QR code size and error-correction level (L, M, Q, H).
@@ -13,7 +13,7 @@ A cross-platform desktop application for generating custom QR codes from text or
 *  **CLI Support**: Includes a command-line script (`convert.js`) for batch QR code generation.
 
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 * **Electron & Node.js**: Build a native desktop app using web technologies. Electron embeds Chromium and Node.js, enabling HTML/CSS/JS to run as a desktop application.
 * **Frontend**: Standard HTML5, CSS3, and JavaScript for the user interface.
@@ -21,7 +21,7 @@ A cross-platform desktop application for generating custom QR codes from text or
 * **Build Tools**: Uses [electron-builder](https://www.electron.build/) for packaging and distribution, creating native installers for Windows, macOS, and Linux.
 
 
-## 🚀 Installation
+##  Installation
 
 ```bash
 # Clone the repository
