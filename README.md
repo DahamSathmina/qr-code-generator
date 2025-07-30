@@ -9,7 +9,7 @@ A cross-platform desktop application for generating custom QR codes from text or
 *  **Real-time Generation**: Enter text or a URL and instantly see the QR code preview.
 *  **Customizable Output**: Adjust the QR code size and error-correction level (L, M, Q, H).
 *  **Export as Image**: Save the generated QR code as a PNG (or other supported formats).
-*  **Offline Usage**: Works entirely on your machine without an internet connection.
+*  **Offline Usage**: Works entirely on your machine without an internet connection but not generate QR Codes.
 *  **CLI Support**: Includes a command-line script (`convert.js`) for batch QR code generation.
 
 
