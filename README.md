@@ -6,13 +6,12 @@ A cross-platform desktop application for generating custom QR codes from text or
 
 ## ✨ Key Features
 
-* ⚡ **Real-time Generation**: Enter text or a URL and instantly see the QR code preview.
-* 🎨 **Customizable Output**: Adjust the QR code size and error-correction level (L, M, Q, H).
-* 🖼️ **Export as Image**: Save the generated QR code as a PNG (or other supported formats).
-* 🌐 **Offline Usage**: Works entirely on your machine without an internet connection.
-* 💻 **CLI Support**: Includes a command-line script (`convert.js`) for batch QR code generation.
+*  **Real-time Generation**: Enter text or a URL and instantly see the QR code preview.
+*  **Customizable Output**: Adjust the QR code size and error-correction level (L, M, Q, H).
+*  **Export as Image**: Save the generated QR code as a PNG (or other supported formats).
+*  **Offline Usage**: Works entirely on your machine without an internet connection.
+*  **CLI Support**: Includes a command-line script (`convert.js`) for batch QR code generation.
 
----
 
 ## 🛠️ Technology Stack
 
@@ -21,7 +20,6 @@ A cross-platform desktop application for generating custom QR codes from text or
 * **QR Code Library**: Utilizes a Node.js library (e.g., `qrcode` or `qr-image`) to encode input data into QR code images.
 * **Build Tools**: Uses [electron-builder](https://www.electron.build/) for packaging and distribution, creating native installers for Windows, macOS, and Linux.
 
----
 
 ## 🚀 Installation
 
@@ -39,9 +37,8 @@ npm start        # or yarn start
 
 This will launch the Electron app. The main window will appear with an input field and a live-updating QR code preview.
 
----
 
-## 🖥️ Usage
+## Usage
 
 ### Graphical Interface
 
@@ -60,7 +57,6 @@ node convert.js "Hello, world!" hello.png
 
 This generates `hello.png` containing the QR code for "Hello, world!". Use `--help` to see all options.
 
----
 
 ## 📦 Packaging (Electron Builder)
 
@@ -108,11 +104,9 @@ Contributions are welcome! To contribute:
 
 Please follow the existing code style and include tests or screenshots for UI changes.
 
----
 
 ## 📄 License
 
-This project is licensed under the **GNU General Public License v3.0** (GPLv3). See the [LICENSE](LICENSE) file for details.
-
+This project is licensed under the **GNU General Public License v3.0** (GPLv3). See the [LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html) file for details.
 Learn more about GPLv3: [https://www.gnu.org/licenses/gpl-3.0.en.html](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
