@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator | ODS </title>
+    <link rel="shortcut icon" href="./Assets/web/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> 
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- custom titlebar -->
+  <div class="custom-titlebar">
+    <div class="title">ODS-open source </div>
+    <div class="window-controls">
+      <button onclick="windowControl('minimize')">–</button>
+      <button onclick="windowControl('maximize')">☐</button>
+      <button class="close-btn" onclick="windowControl('close')">✕</button>
+    </div>
+  </div>
+
+    <!-- header -->
+<header class="navbar">
+    <img src="./Assets/ico/icon-192.ico" alt="Logo" class="logo-icon">
+    <h2 class="gradient-text-animation">QR CODE GENERATOR</h2>
+</header>
+     <!-- main -->
+      <main>
+      <div class="image">
+        <img src="./images/setting-qr-image.png" alt="qr-image">
+      </div>
+      <div class="content">
+        <h2>QR Code Generator</h2>
+        <p>Create and scan QR codes instantly! Generate QR codes for websites, text, Wi-Fi, contacts, and more. Scan with your camera, save or share easily. Fast, free, and easy to use.
+        </p>
+        <p>Enter your URL below to generate a QR Code and download the QR image.
+        </p>
+        
+        <form id="generate-form">
+            <input 
+            type="url"
+            id="url"
+            placeholder="Enter a url"
+            class="inputurl"
+            />
+
+            <select 
+            name="size" 
+            id="size"
+            class="selected"
+            >
+            <option value="100">100×100</option>
+            <option value="200">200×200</option>
+            <option value="300" selected>300×300</option>
+            <option value="400">400×400</option>
+            <option value="500">500×500</option>
+            <option value="600">600×600</option>
+            <option value="700">700×700</option>
+            <option value="800">800×800</option> 
+        </select>
+        <button class="submit" type="submit">Generate Your QR Code</button>
+        </form>
+      </div>
+      </main>
+
+      <div id="generated">
+        <!-- loding spinner -->
+         <div id="spinner" class="loader"></div>
+        <!--generated qr code append-->
+         <div id="qrcode"></div>
+      </div>   
+
+  <script>
+    const { ipcRenderer } = require('electron');
+    function windowControl(action) {
+      ipcRenderer.send('window-control', action);
+    }
+  </script>
+</body>
+</html>
