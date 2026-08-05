@@ -1,8 +1,7 @@
-# QR Code Generator
+### QR Code Generator
 
 A cross-platform desktop application for generating custom QR codes from text or URLs. Built with [Electron](https://www.electronjs.org/) (Chromium + Node.js), this app provides a simple GUI to create and save QR codes on Windows, macOS, and Linux. It also includes a command-line interface for batch generation.
 
----
 
 ##  Key Features
 
@@ -25,7 +24,7 @@ A cross-platform desktop application for generating custom QR codes from text or
 
 ```bash
 # Clone the repository
-git clone https://github.com/DahamSathmina/qr-code-generator.git
+git clone https://github.com/dahamsathmina/qr-code-generator.git
 cd qr-code-generator
 
 # Install dependencies
@@ -89,24 +88,3 @@ To create distributable installers:
    ```
 
 Installers will be generated in the `dist/` folder.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! To contribute:
-
-1. Fork the repository.
-2. Create a branch: `git checkout -b feature/YourFeature`.
-3. Make your changes and commit: `git commit -m "Add YourFeature"`.
-4. Push: `git push origin feature/YourFeature`.
-5. Open a Pull Request to merge into `main`.
-
-Please follow the existing code style and include tests or screenshots for UI changes.
-
-
-## 📄 License
-
-This project is licensed under the **GNU General Public License v3.0** (GPLv3). See the [LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html) file for details.
-Learn more about GPLv3: [https://www.gnu.org/licenses/gpl-3.0.en.html](https://www.gnu.org/licenses/gpl-3.0.en.html)
-
